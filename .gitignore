@@ -3,4 +3,5 @@ node_modules
 npm-debug.log
 build
 rethinkdb_data
+.env
 config/compose.pem

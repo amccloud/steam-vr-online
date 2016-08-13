@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development src/server.js",
     "build": "NODE_ENV=production webpack",
-    "deploy": "wt create build/task/updateMetrics.js"
+    "deploy": "wt create build/task/updateMetrics.js",
+    "deploy:cron": "wt cron schedule \"*/1 * * * *\" build/task/updateMetrics.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,7 @@
     "@horizon/server": "^1.1.3",
     "await-delay": "^1.0.0",
     "axios": "^0.13.1",
+    "babel-runtime": "^6.11.6",
     "cors": "^2.7.1",
     "express": "^4.14.0",
     "raven": "^0.11.0",
@@ -32,6 +34,7 @@
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-react-require": "^2.1.0",
+    "babel-plugin-transform-runtime": "^6.12.0",
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",

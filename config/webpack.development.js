@@ -39,6 +39,7 @@ export default {
           NODE_ENV: JSON.stringify('development'),
           STEAM_API_KEY: JSON.stringify(process.env.STEAM_API_KEY),
           RETHINKDB_HOST: JSON.stringify(process.env.RETHINKDB_HOST),
+          RETHINKDB_PORT: JSON.stringify(process.env.RETHINKDB_PORT),
           RETHINKDB_PASSWORD: JSON.stringify(process.env.RETHINKDB_PASSWORD)
         }
       })
